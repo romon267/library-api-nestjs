@@ -34,25 +34,24 @@ This API is written in TypeScript with Nest.js framework.
 ***PATCH /users/:id***
 
 - Updates the user found by 'id' parameter with data in same format as create route.
-
 - Any field is optional, if none provided, old data will be saved.
 
 ### Delete:
 
 ***DELETE /users/:id***
 
-Removes the user found by 'id' parameter.
+- Removes the user found by 'id' parameter.
 
 ### Specific endpoints:
 
 ***POST /users/abonnement/:id***
 
-Sets the user's abonnement to boolean *true*.
+- Sets the user's abonnement to boolean *true*.
 
 
 ***DELETE /users/abonnement/:id***
 
-Sets the user's abonnement to boolean *false*.
+- Sets the user's abonnement to boolean *false*.
 
 
 ***POST /users/:userId/:bookId***
@@ -65,7 +64,7 @@ Sets the user's abonnement to boolean *false*.
 
 ***DELETE /users/:userId/:bookId***
 
-Removes the book found by 'bookId' from the user found by 'userId'.
+- Removes the book found by 'bookId' from the user found by 'userId'.
 
 ## Books
 
@@ -73,7 +72,7 @@ Removes the book found by 'bookId' from the user found by 'userId'.
 
 ***POST /books***
 
-Create new book with data in following format:
+- Create new book with data in following format:
 ```
   {
     "title": "John Doe",
@@ -85,25 +84,23 @@ Create new book with data in following format:
 
 ***GET /books***
 
-Returns list of books.
-
-Has pagination with query parameters: **limit** and **offset**.
+- Returns list of books.
+- Has pagination with query parameters: **limit** and **offset**.
 
 
 ***GET /books/:id***
 
-Returns book found by 'id'.
+- Returns book found by 'id'.
 
 ### Update:
 
 ***PATCH /books/:id***
 
-Updates the book found by 'id' parameter with data in same format as create route.
-
-Any field is optional, if none provided, old data will be saved.
+- Updates the book found by 'id' parameter with data in same format as create route.
+- Any field is optional, if none provided, old data will be saved.
 
 ### Delete:
 
 ***DELETE /books/:id***
 
-Removes the book found by 'id' parameter.
+- Removes the book found by 'id' parameter.
