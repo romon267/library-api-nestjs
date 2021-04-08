@@ -9,33 +9,33 @@ This API is written in TypeScript with Nest.js framework.
 
 ***POST /users***
 
-Create new user with data in following format:
+- Create new user with data in following format:
 ```
   {
     "name": "John Doe",
     "abonnement": true | false
   }
 ```
-"abonnement" value is optional, if not provided, default value "false" is set.
+- "abonnement" value is optional, if not provided, default value "false" is set.
 
 ### Read:
 
 ***GET /users***
 
-Returns the list of all users
+- Returns the list of all users
 
 
 ***GET /users/:id***
 
-Returns specific user found by 'id' parameter with list of his books
+- Returns specific user found by 'id' parameter with list of his books
 
 ### Update:
 
 ***PATCH /users/:id***
 
-Updates the user found by 'id' parameter with data in same format as create route.
+- Updates the user found by 'id' parameter with data in same format as create route.
 
-Any field is optional, if none provided, old data will be saved.
+- Any field is optional, if none provided, old data will be saved.
 
 ### Delete:
 
