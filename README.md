@@ -9,10 +9,12 @@ This API is written in TypeScript with Nest.js framework.
 
 POST /users
 Create new user with data in following format:
-    {
-      "name": "John Doe",
-      "abonnement": true | false
-    }
+```
+  {
+    "name": "John Doe",
+    "abonnement": true | false
+  }
+```
 "abonnement" value is optional, if not provided, default value "false" is set.
 
 #### Read:
@@ -57,10 +59,12 @@ Removes the book found by 'bookId' from the user found by 'userId'.
 
 POST /books
 Create new book with data in following format:
-    {
-      "title": "John Doe",
-      "author": "Book name"
-    }
+```
+  {
+    "title": "John Doe",
+    "author": "Book name"
+  }
+```
 
 #### Read:
 
