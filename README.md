@@ -1,6 +1,12 @@
 # Library backend API
 This API is written in TypeScript with Nest.js framework.
 
+To run this project locally you need to:
+1. Clone https://github.com/romon267/library-api-nestjs.git
+2. Run ```npm install```
+3. Create a .env file with "MONGODB_URI" variable.
+4. Run ```npm run start:dev```
+
 # Endpoints
 
 ## Users
