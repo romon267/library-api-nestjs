@@ -57,13 +57,10 @@ Sets the user's abonnement to boolean *false*.
 
 ***POST /users/:userId/:bookId***
 
-Adds the book found by 'bookId' to the user found by 'userId'.
-
-One book can be taken by one user only.
-
-User can't take more than 5 books.
-
-User can't take book if he has no abonnement.
+- Adds the book found by 'bookId' to the user found by 'userId'.
+- One book can be taken by one user only.
+- User can't take more than 5 books.
+- User can't take book if he has no abonnement.
 
 
 ***DELETE /users/:userId/:bookId***
