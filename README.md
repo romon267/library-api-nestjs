@@ -7,6 +7,8 @@ To run this project locally you need to:
 3. Create a .env file with "MONGODB_URI" variable in mongoose connect format, as decribed [here](https://mongoosejs.com/docs/connections.html).
 4. Run ```npm run start:dev```
 
+[**Live demo here**](https://pacific-harbor-91486.herokuapp.com/)
+
 # Endpoints
 
 ## Users
