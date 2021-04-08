@@ -1,11 +1,11 @@
 # Library backend API
 This API is written in TypeScript with Nest.js framework.
 
-## Endpoints
+# Endpoints
 
-### Users
+## Users
 
-#### Create:
+### Create:
 
 ***POST /users***
 
@@ -18,7 +18,7 @@ Create new user with data in following format:
 ```
 "abonnement" value is optional, if not provided, default value "false" is set.
 
-#### Read:
+### Read:
 
 ***GET /users***
 
@@ -29,7 +29,7 @@ Returns the list of all users
 
 Returns specific user found by 'id' parameter with list of his books
 
-#### Update:
+### Update:
 
 ***PATCH /users/:id***
 
@@ -37,13 +37,13 @@ Updates the user found by 'id' parameter with data in same format as create rout
 
 Any field is optional, if none provided, old data will be saved.
 
-#### Delete:
+### Delete:
 
 ***DELETE /users/:id***
 
 Removes the user found by 'id' parameter.
 
-#### Specific endpoints:
+### Specific endpoints:
 
 ***POST /users/abonnement/:id***
 
@@ -70,9 +70,9 @@ User can't take book if he has no abonnement.
 
 Removes the book found by 'bookId' from the user found by 'userId'.
 
-### Books
+## Books
 
-#### Create:
+### Create:
 
 ***POST /books***
 
@@ -84,7 +84,7 @@ Create new book with data in following format:
   }
 ```
 
-#### Read:
+### Read:
 
 ***GET /books***
 
@@ -97,7 +97,7 @@ Has pagination with query parameters: **limit** and **offset**.
 
 Returns book found by 'id'.
 
-#### Update:
+### Update:
 
 ***PATCH /books/:id***
 
@@ -105,7 +105,7 @@ Updates the book found by 'id' parameter with data in same format as create rout
 
 Any field is optional, if none provided, old data will be saved.
 
-#### Delete:
+### Delete:
 
 ***DELETE /books/:id***
 
